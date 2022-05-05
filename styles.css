@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  font-family: Verdana;
+}
+
+body {
+  background-color: #FDFFA9;
+}
+
+
+#main {
+  width: 100%;
+  text-align: center;
+}
+
+.containDivs {
+  max-width: 700px;
+  border: 1px solid gray;
+  padding: 0;
+  margin: 15px auto;
+  border-radius: 60px;
+  overflow: hidden;
+}
+
+
+#main .containDivs:first-child {
+  background-color: #00C897;
+}
+
+.containDivs :not(input) {
+  padding: 15px;
+}
+
+#msgHeader, #lmpHeader {
+  background-color: #019267;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  margin: 0 auto;
+}
+
+
+#lmpMsg {
+  background-color: #FFD365;
+  padding: 25px 10px;
+  font-family: sans-serif;
+  font-size: 22px;
+  color: #54436B;
+}
+
+input {
+  border: 2px solid #019267;
+}
+
+input[type="text"] {
+  width: 90%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  background-image: url("icon.png");
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-position: 3px;
+  text-indent: 40px;
+  font-family: monospace;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  background-color: #a1a1a1;
+  color: white;
+}
+
+input[type="button"] {
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 20px;
+  background-color: #71EFA3;
+}
+
+
+#errorMsg {
+  max-width: 700px;
+  background-color: #FF616D;
+  padding: 15px;
+  margin: 10px auto;
+  border: 2px solid #D83A56;
+  color: white;
+  font-size: 18px;
+  display: none;
+  border-radius: 20px;
+}
+
+#errorMsg > span {
+  font-size: 30px;
+  font-weight: bold;
+}
